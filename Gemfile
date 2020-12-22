@@ -110,8 +110,8 @@ gem 'carrierwave'
 gem 'fog-aws'
 
 #デプロイ
-group :production, :staging do
-  gem 'pg', '>= 0.18', '< 2.0'
+group :production do
+  gem 'pg'
 end
 
 #デプロイに仮想環境の変更を反映する
