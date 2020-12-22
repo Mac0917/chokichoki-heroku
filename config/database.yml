@@ -37,9 +37,9 @@ test:
 production:
   <<: *default
   #database: chokichoki-db
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8mb4
   host: db           # 追記
-  username: postgres # 追記
+  username: mysql2 # 追記
   password: password # 追記
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
