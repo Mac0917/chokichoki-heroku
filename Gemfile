@@ -110,9 +110,9 @@ gem 'carrierwave'
 gem 'fog-aws'
 
 #デプロイ
-# group :production, :staging do
-#   gem 'mysql2'
-# end
+group :production, :staging do
+  gem 'pg', '>= 0.18', '< 2.0'
+end
 
 #デプロイに仮想環境の変更を反映する
 gem 'capistrano'
