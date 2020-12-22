@@ -23,12 +23,12 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
-  #config.assets.js_compressor = :uglifier
-  config.assets.js_compressor = Uglifier.new(harmony: true)
+  config.assets.js_compressor = :uglifier
+  #config.assets.js_compressor = Uglifier.new(harmony: true)
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -48,7 +48,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  #config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -92,24 +92,24 @@ Rails.application.configure do
   
 
   # #awsサポート
-  config.action_mailer.delivery_method = :ses
+  #config.action_mailer.delivery_method = :ses
 
   #本番環境でアクションケーブル
   # config.action_cable.url = "ws://54.64.74.19/cable" 
   # config.action_cable.allowed_request_origins = ["http://54.64.74.19"]
-  config.action_cable.url = "wss://chokichoki1220.herokuapp.com/cable" 
-  config.action_cable.allowed_request_origins = [ "https://chokichoki1220.herokuapp.com/", /https:\/\/chokichoki.info.*/ ]
+  config.action_cable.url = "wss://chokichoki1000.herokuapp.com/cable" 
+  config.action_cable.allowed_request_origins = [ "https://chokichoki1000.herokuapp.com/", /https:\/\/chokichoki.info.*/ ]
   ActionCable.server.config.disable_request_forgery_protection = true
   config.reload_classes_only_on_change = true
 
   #本番環境carriewave
-  config.public_file_server.enabled = true
+  #config.public_file_server.enabled = true
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
   #mailでlink_toを使うための設定 product.rbは本番環境での設定
-  config.action_mailer.default_url_options = { host: 'chokichoki1220.herokuapp.com'}
+  config.action_mailer.default_url_options = { host: 'chokichoki1000.herokuapp.com'}
 
-  config.hosts << ".herokuapp.com" # 追記
+  #config.hosts << ".herokuapp.com" # 追記
 end
