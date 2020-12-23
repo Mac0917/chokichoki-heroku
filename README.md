@@ -23,6 +23,22 @@ https://www.youtube.com/watch?v=mXqwkor7Uts&feature=youtu.be<br>
 美容師アシスタント・・・人の髪を切って練習したいとき<br>
 一般の人・・・安価で髪を切りたいとき
 
+## URL
+https://chokichoki1000.herokuapp.com/<br>
+今現在はβ版です。このサイトでの予約は架空のものとなります。<br>
+以下ログイン用のテストデータです<br>
+会員テストデータ(一般人)<br>
+メールアドレス・・・1から30までの数字+@gmail.com     例 1@gmail.com<br>
+パスワード・・・chokichoki<br>
+
+美容師テストデータ<br>
+メールアドレス・・・1から50までの数字+@gmail.com     例 1@gmail.com<br>
+パスワード・・・chokichoki<br>
+
+adminテストデータ<br>
+メールアドレス・・・aaa@gmail.com<br>
+パスワード・・・chokichoki<br>
+
 ### 設計書
 https://drive.google.com/file/d/1L9GzhtcA8YSMYTWPJa_tjOHIt_3FVncx/view?usp=sharing
 ![result](https://github.com/Mac0917/img_for_readme/blob/master/er.png)
